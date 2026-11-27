@@ -3,430 +3,430 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nics Hardware &amp; Borehole Services — We Find Water</title>
-<meta name="description" content="Nics Hardware and Borehole Services: borehole drilling, hydrogeological surveys, pump installation, solar water systems, tanks and hardware — Kabati, Wangige, Kikuyu, Kenol. Get a quote on WhatsApp.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230284C7'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='34' font-weight='900' fill='%23F6F4EE' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+<title>Nics Hardware &amp; Borehole Services — Borehole Drilling &amp; Water Systems</title>
+<meta name="description" content="Nics Hardware and Borehole Services: borehole drilling, hydrogeological surveys, pump installation, solar water systems, tanks and hardware — Kabati, Wangige, Kikuyu, Kenol. Request a quotation on WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23F2B705'/%3E%3Ctext x='32' y='45' font-family='Arial Black,Arial' font-size='34' font-weight='900' fill='%2311161A' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<noscript><style>#loader{display:none}</style></noscript>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ground:#F6F4EE; --ink:#062831; --muted:#54666B; --line:rgba(6,40,49,.16);
-  --accent:#0284C7; --accent-ink:#F6F4EE; --deep:#06384A; --deep2:#04222E;
-  --f-disp:"Archivo",Arial,sans-serif; --f-mono:"Space Mono",monospace;
-  --t-mega:clamp(3.2rem,12.5vw,11.5rem); --t-xl:clamp(2.3rem,5.6vw,4.4rem);
-  --t-l:clamp(1.5rem,3.2vw,2.4rem); --t-m:clamp(1.05rem,1.4vw,1.3rem);
+  --paper:#EDEFF0; --paper2:#E2E6E8; --ink:#11161A; --ink2:#1B232A; --muted:#5A666E;
+  --line:rgba(17,22,26,.18); --yellow:#F2B705; --yellow-d:#C79400; --water:#0E7CC4;
+  --f-cond:"Anton",Impact,sans-serif; --f-body:"Archivo",Arial,sans-serif; --f-mono:"IBM Plex Mono",monospace;
   --pad:clamp(1.1rem,4vw,3.5rem);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 html.lenis,html.lenis body{height:auto}
 .lenis.lenis-smooth{scroll-behavior:auto!important}
-body{background:var(--ground);color:var(--ink);font-family:var(--f-disp);font-weight:450;
-  font-size:clamp(1rem,.95rem+.2vw,1.125rem);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-body::after{content:"";position:fixed;inset:0;z-index:65;pointer-events:none;opacity:.05;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
-::selection{background:var(--accent);color:#fff}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-weight:450;
+  font-size:clamp(1rem,.95rem+.2vw,1.1rem);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--yellow);color:var(--ink)}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
-:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.mono{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
-.wrap{padding-left:var(--pad);padding-right:var(--pad);max-width:1600px;margin:0 auto}
+:focus-visible{outline:3px solid var(--water);outline-offset:3px}
+.mono{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase}
+.wrap{padding-left:var(--pad);padding-right:var(--pad);max-width:1560px;margin:0 auto}
+.cond{font-family:var(--f-cond);text-transform:uppercase;font-weight:400;letter-spacing:.01em}
 
-/* ---------- letter roll ---------- */
-.roll{position:relative;display:inline-block;overflow:hidden;vertical-align:bottom}
-.roll .r1,.roll .r2{display:block;transition:transform .45s cubic-bezier(.7,0,.2,1)}
-.roll .r2{position:absolute;left:0;top:100%;color:var(--accent)}
-a:hover .roll .r1,a:hover .roll .r2,.btn:hover .roll .r1,.btn:hover .roll .r2{transform:translateY(-100%)}
-.btn .roll .r2{color:inherit}
+/* ---------- drill-string ruler (desktop) / progress (mobile) ---------- */
+#ruler{position:fixed;left:0;top:0;bottom:0;width:34px;z-index:80;pointer-events:none;display:none}
+@media(min-width:900px){#ruler{display:block}}
+#ruler .track{position:absolute;left:15px;top:0;bottom:0;width:2px;background:rgba(17,22,26,.15)}
+#ruler .fillbar{position:absolute;left:15px;top:0;width:2px;background:var(--yellow-d);height:0}
+#ruler .tick{position:absolute;left:9px;width:8px;height:1px;background:rgba(17,22,26,.4)}
+#ruler .ticklab{position:absolute;left:22px;font-family:var(--f-mono);font-size:.55rem;color:var(--muted);transform:translateY(-50%)}
+#ruler .bit{position:absolute;left:8px;width:16px;height:16px;background:var(--yellow);border:2px solid var(--ink);
+  transform:translateY(-50%) rotate(45deg)}
+#ruler .depthlab{position:absolute;left:26px;font-family:var(--f-mono);font-size:.62rem;font-weight:600;color:var(--ink);
+  transform:translateY(-50%);background:var(--yellow);padding:.1rem .35rem;white-space:nowrap}
+#topProgress{position:fixed;top:0;left:0;height:3px;background:var(--yellow);width:0;z-index:120}
+@media(min-width:900px){#topProgress{display:none}}
 
-/* ---------- loader ---------- */
-#loader{position:fixed;inset:0;background:var(--deep2);color:var(--ground);z-index:200;
-  display:flex;align-items:flex-end;justify-content:space-between;padding:var(--pad)}
-#loader .big{font-weight:850;font-stretch:120%;font-size:clamp(2rem,7vw,5rem);line-height:.9;letter-spacing:-.02em;text-transform:uppercase}
-#loader .pct{font-family:var(--f-mono);font-size:clamp(2rem,7vw,5rem)}
+/* ---------- header: dark site board ---------- */
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--ink);color:#EDEFF0;border-bottom:3px solid var(--yellow)}
+.hd-in{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.7rem var(--pad)}
+.logo{display:flex;align-items:center;gap:.7rem}
+.logo .box{background:var(--yellow);color:var(--ink);font-family:var(--f-cond);font-size:1.3rem;line-height:1;padding:.42rem .55rem .3rem}
+.logo .name{font-family:var(--f-cond);font-size:1.05rem;letter-spacing:.04em;line-height:1}
+.logo .name span{display:block;font-family:var(--f-mono);font-size:.55rem;letter-spacing:.14em;color:rgba(237,239,240,.65);margin-top:.25rem}
+nav.main{display:flex;gap:1.5rem}
+nav.main a{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(237,239,240,.85);padding:.3rem 0;border-bottom:2px solid transparent}
+nav.main a:hover{color:var(--yellow);border-bottom-color:var(--yellow)}
+.hd-call{font-family:var(--f-mono);font-size:.72rem;font-weight:600;background:var(--yellow);color:var(--ink);padding:.55rem .95rem;text-transform:uppercase;letter-spacing:.05em}
+.hd-call:hover{background:#fff}
+@media(max-width:860px){nav.main{display:none}}
 
-/* ---------- header ---------- */
-header{position:fixed;top:0;left:0;right:0;z-index:100;color:var(--ink);
-  background:rgba(246,244,238,.88);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
-  border-bottom:1px solid var(--line)}
-.hd-in{display:flex;justify-content:space-between;align-items:flex-start;padding:.85rem var(--pad)}
-.logo{font-weight:900;font-stretch:118%;letter-spacing:-.01em;font-size:1.05rem;line-height:1;text-transform:uppercase}
-.logo span{display:block;font-size:.62rem;font-weight:600;letter-spacing:.24em;margin-top:.3rem}
-nav.main{display:flex;gap:1.6rem}
-nav.main a{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding-bottom:3px}
-.hd-cta{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--ink);border-radius:99px;padding:.5rem 1rem;transition:background .3s,border-color .3s,color .3s}
-.hd-cta:hover{background:var(--accent);border-color:var(--accent);color:#fff}
-.hd-cta:hover .roll .r2{color:#fff}
-@media(max-width:820px){nav.main{display:none}}
-
-/* ---------- depth chip ---------- */
-#depthChip{position:fixed;left:1.1rem;bottom:1.1rem;z-index:90;background:var(--ink);color:var(--ground);
-  font-family:var(--f-mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
-  padding:.6rem .9rem;border-radius:99px;display:inline-flex;gap:.6rem;align-items:center;box-shadow:0 10px 30px rgba(0,0,0,.22)}
-#depthChip b{color:#38BDF8;font-weight:700}
-#depthChip .dot{width:7px;height:7px;border-radius:50%;background:#38BDF8;animation:blink 1.6s ease-in-out infinite}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
-
-/* ---------- hero ---------- */
-.hero{padding-top:clamp(6.5rem,14vh,10rem);position:relative}
-.hero-meta{display:flex;justify-content:space-between;gap:1rem;color:var(--muted);margin-bottom:1.2rem;flex-wrap:wrap}
-.hero h1{font-weight:880;font-stretch:122%;text-transform:uppercase;line-height:.84;letter-spacing:-.03em;font-size:var(--t-mega)}
-.hero h1 .row{display:block;overflow:hidden;padding-bottom:.07em;margin-bottom:-.07em}
+/* ---------- hero: full-bleed site photo ---------- */
+.hero{position:relative;background:var(--ink);color:#F2F5F6;overflow:hidden}
+.hero .bg{position:absolute;inset:0}
+.hero .bg img{width:100%;height:118%;object-fit:cover;opacity:.5;filter:saturate(.85) contrast(1.05)}
+.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,14,17,.92) 0%,rgba(10,14,17,.35) 55%,rgba(10,14,17,.55) 100%)}
+.hero-in{position:relative;z-index:2;padding:clamp(7.5rem,17vh,11rem) var(--pad) clamp(2.2rem,5vw,3.5rem);max-width:1560px;margin:0 auto}
+.hero .ref{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:rgba(242,245,246,.75);border-bottom:1px solid rgba(242,245,246,.25);padding-bottom:.9rem;margin-bottom:1.6rem}
+.hero h1{font-family:var(--f-cond);text-transform:uppercase;line-height:.92;letter-spacing:.005em;
+  font-size:clamp(3rem,10.5vw,9.2rem)}
+.hero h1 .row{display:block;overflow:hidden;padding-bottom:.06em;margin-bottom:-.06em}
 .hero h1 .row>span{display:block}
-.outl-wrap{position:relative;--fill:0%}
-.outl-base{color:transparent;-webkit-text-stroke:2px var(--ink)}
-.outl-fill{position:absolute;inset:0;color:var(--accent);clip-path:inset(0 calc(100% - var(--fill)) 0 0)}
-.hero-sub{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:end;margin:2.2rem 0 2.6rem}
-.hero-sub p{font-size:var(--t-m);max-width:36ch;line-height:1.45}
-.hero-sub p strong{font-weight:750}
-.cta-row{display:flex;gap:.8rem;flex-wrap:wrap;justify-content:flex-end}
-.btn{position:relative;z-index:0;display:inline-flex;align-items:center;gap:.6rem;background:var(--accent);color:#fff;
-  font-weight:750;font-size:1rem;padding:1rem 1.7rem;border-radius:99px;border:2px solid var(--accent);
-  transition:color .3s;white-space:nowrap;overflow:hidden}
-.btn::before{content:"";position:absolute;inset:0;background:var(--ink);z-index:-1;
-  transform:scaleX(0);transform-origin:var(--fill-origin,left);transition:transform .45s cubic-bezier(.7,0,.2,1)}
-.btn.fill-in::before{transform:scaleX(1)}
-.btn.fill-in{border-color:var(--ink)}
-.btn .arr{display:inline-block;transition:transform .3s cubic-bezier(.7,0,.2,1)}
-.btn:hover .arr{transform:translateX(5px)}
-.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.hero h1 .hl{color:var(--yellow)}
+.hero-sub{display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;align-items:end;margin-top:1.8rem}
+.hero-sub p{font-size:clamp(1.05rem,1.5vw,1.3rem);line-height:1.45;max-width:38ch;color:rgba(242,245,246,.92)}
+.hero-sub p strong{color:#fff;font-weight:700}
+.cta-row{display:flex;gap:.7rem;flex-wrap:wrap;justify-content:flex-end}
+.btn{display:inline-flex;align-items:center;gap:.55rem;background:var(--yellow);color:var(--ink);
+  font-weight:700;font-size:.98rem;padding:.95rem 1.5rem;border:2px solid var(--yellow);text-transform:uppercase;letter-spacing:.03em;transition:background .25s,color .25s}
+.btn:hover{background:transparent;color:var(--yellow)}
+.btn.ghost{background:transparent;color:#F2F5F6;border-color:rgba(242,245,246,.6)}
+.btn.ghost:hover{border-color:#fff;color:#fff}
+.btn .arr{transition:transform .25s}
+.btn:hover .arr{transform:translateX(4px)}
 @media(max-width:760px){.hero-sub{grid-template-columns:1fr}.cta-row{justify-content:flex-start}}
-.hero-img{position:relative;overflow:hidden;border-radius:4px}
-.hero-img img{width:100%;height:clamp(280px,54vh,540px);object-fit:cover;transform:scale(1.12)}
-.hero-img .tag{position:absolute;left:1rem;bottom:1rem;background:var(--ground);color:var(--ink);
-  font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;padding:.55rem .9rem;border-radius:99px}
-.hero-img .tag b{color:var(--accent);font-weight:700}
-
-/* ---------- strata bands ---------- */
-.strata{height:30px;margin-top:clamp(2.5rem,6vw,4.5rem);
-  background:linear-gradient(to bottom,#E9DFCB 0 22%,#D9C6A5 22% 45%,#B98A5E 45% 68%,#7A5230 68% 86%,#46301C 86% 100%)}
-.strata-label{display:flex;justify-content:space-between;color:var(--muted);padding:.55rem var(--pad) 0;max-width:1600px;margin:0 auto}
-
-/* ---------- marquee ---------- */
-.marquee{background:var(--ink);color:var(--ground);overflow:hidden;padding:.9rem 0;margin-top:1.4rem}
-.mq-track{display:flex;width:max-content;animation:mq 32s linear infinite;will-change:transform}
-.mq-track span{font-weight:800;font-stretch:115%;text-transform:uppercase;font-size:1.05rem;letter-spacing:.02em;padding-right:.6rem;white-space:nowrap}
-.mq-track i{font-style:normal;color:#38BDF8;padding-right:.6rem}
-@keyframes mq{to{transform:translateX(-50%)}}
+.hero-strip{position:relative;z-index:2;background:var(--yellow);color:var(--ink)}
+.hero-strip .in{max-width:1560px;margin:0 auto;padding:.65rem var(--pad);display:flex;gap:1.6rem;flex-wrap:wrap;
+  font-family:var(--f-mono);font-size:.7rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase}
+.hero-strip span::before{content:"▪ "}
 
 /* ---------- sections ---------- */
-section{padding:clamp(4rem,9vw,7.5rem) 0 0}
-.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;border-top:2px solid var(--ink);padding-top:1rem;margin-bottom:2.4rem}
-.sec-head h2{font-size:var(--t-xl);font-weight:850;font-stretch:118%;text-transform:uppercase;line-height:.92;letter-spacing:-.02em}
+section{padding:clamp(3.8rem,8vw,6.5rem) 0 0}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:2rem}
+.sec-head h2{font-family:var(--f-cond);text-transform:uppercase;font-size:clamp(2.1rem,5.2vw,3.9rem);line-height:.95}
+.sec-head h2 em{font-style:normal;color:var(--yellow-d)}
 .sec-head .mono{color:var(--muted)}
+.kicker{display:flex;align-items:center;gap:.7rem;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem}
+.kicker::before{content:"";width:2.2rem;height:3px;background:var(--yellow)}
 
-/* ---------- services index ---------- */
-.svc{border-top:1px solid var(--line)}
-.svc a{display:grid;grid-template-columns:4.5rem 1fr auto;align-items:center;gap:1rem;padding:1.5rem .4rem;border-bottom:1px solid var(--line);position:relative;transition:padding .35s cubic-bezier(.7,0,.2,1)}
-.svc a::before{content:"";position:absolute;inset:0;background:var(--ink);transform:scaleY(0);transform-origin:bottom;transition:transform .35s cubic-bezier(.7,0,.2,1);z-index:0}
-.svc a>*{position:relative;z-index:1}
-.svc a:hover{padding-left:1.2rem;color:var(--ground)}
-.svc a:hover::before{transform:scaleY(1)}
-.svc .no{font-family:var(--f-mono);font-size:.8rem;color:var(--muted)}
-.svc a:hover .no{color:#38BDF8}
-.svc h3{font-size:var(--t-l);font-weight:800;font-stretch:112%;text-transform:uppercase;line-height:1;letter-spacing:-.01em}
-.svc p{color:var(--muted);font-size:.95rem;max-width:54ch;margin-top:.35rem}
-.svc a:hover p{color:rgba(246,244,238,.75)}
-.svc .arr{font-size:1.5rem;font-weight:700;transition:transform .35s}
-.svc a:hover .arr{transform:translate(4px,-4px);color:#38BDF8}
-@media(max-width:640px){.svc a{grid-template-columns:2.6rem 1fr auto}.svc h3{font-size:1.3rem}}
-
-/* ---------- deep field: the drilling process ---------- */
-.field{background:var(--deep);color:#EAF6FB;margin-top:clamp(4rem,9vw,7.5rem);padding:clamp(3.5rem,8vw,6.5rem) 0}
-.field .sec-head{border-top-color:#EAF6FB}
-.field .sec-head .mono{color:rgba(234,246,251,.6)}
-.steps-wrap{display:grid;grid-template-columns:1fr;gap:2.5rem}
-.bignum-col{display:none}
-.step .num{font-size:clamp(4.5rem,10vw,8.5rem);font-weight:900;font-stretch:122%;line-height:.85;letter-spacing:-.03em;color:#38BDF8}
-.step h3{font-size:var(--t-m);font-weight:800;text-transform:uppercase;margin:.9rem 0 .5rem;letter-spacing:.01em}
-.step p{color:rgba(234,246,251,.78);max-width:32ch}
-.field .imgbox{overflow:hidden;border-radius:4px;margin-top:2.5rem}
-.field .imgbox img{width:100%;height:clamp(240px,44vh,420px);object-fit:cover}
-@media(min-width:821px){
-  .steps-wrap{grid-template-columns:auto 1fr;gap:clamp(3rem,7vw,7rem);align-items:start}
-  .bignum-col{display:block;position:sticky;top:22vh}
-  #bigNum{font-size:clamp(11rem,24vw,21rem);font-weight:900;font-stretch:124%;line-height:.8;letter-spacing:-.04em;color:#38BDF8}
-  .bignum-col .mono{color:rgba(234,246,251,.6);margin-top:1rem;display:block}
-  .steps{display:flex;flex-direction:column}
-  .step{padding:clamp(2.2rem,5vh,3.5rem) 0;border-top:2px solid rgba(234,246,251,.25)}
-  .step:first-child{border-top:0;padding-top:.4rem}
-  .step .num{display:none}
-  .step h3{font-size:clamp(1.5rem,2.6vw,2.2rem);margin-top:0}
-  .step p{font-size:1.08rem;max-width:46ch}
+/* ---------- services: spec sheet table ---------- */
+.spec{border:2px solid var(--ink);background:#fff}
+.spec .srow{display:grid;grid-template-columns:4.2rem 1fr 1.4fr 3rem;gap:1.1rem;align-items:center;
+  padding:1.15rem 1.2rem;border-bottom:1px solid var(--line);color:inherit;transition:background .2s}
+.spec .srow:last-child{border-bottom:0}
+.spec a.srow:hover{background:var(--yellow)}
+.spec .no{font-family:var(--f-mono);font-size:.78rem;font-weight:600;color:var(--muted)}
+.spec a.srow:hover .no{color:var(--ink)}
+.spec h3{font-family:var(--f-cond);font-weight:400;text-transform:uppercase;font-size:clamp(1.15rem,2.2vw,1.6rem);letter-spacing:.02em;line-height:1}
+.spec p{color:var(--muted);font-size:.94rem;line-height:1.45}
+.spec a.srow:hover p{color:rgba(17,22,26,.75)}
+.spec .arr{font-size:1.3rem;font-weight:700;text-align:right}
+.spec .shead{display:grid;grid-template-columns:4.2rem 1fr 1.4fr 3rem;gap:1.1rem;padding:.6rem 1.2rem;background:var(--ink);color:#EDEFF0;
+  font-family:var(--f-mono);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase}
+@media(max-width:760px){
+  .spec .shead{display:none}
+  .spec .srow{grid-template-columns:3rem 1fr 2rem}
+  .spec p{grid-column:2/3}
+  .spec .arr{grid-row:1;grid-column:3}
 }
-@media(max-width:820px){.steps{display:grid;grid-template-columns:1fr;gap:2rem}}
 
-/* ---------- why nics / factors ---------- */
-.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
-.about .imgbox{overflow:hidden;border-radius:4px}
-.about .imgbox img{width:100%;height:100%;min-height:340px;object-fit:cover}
-.about h3{font-size:var(--t-l);font-weight:820;font-stretch:112%;line-height:1.02;letter-spacing:-.015em;margin-bottom:1.1rem}
-.about p{color:var(--muted);margin-bottom:1.1rem;max-width:56ch}
-.factors{border:2px solid var(--ink);border-radius:4px;padding:1.4rem 1.4rem 1.1rem;margin-top:1.6rem}
-.factors h4{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.9rem}
-.factors li{list-style:none;display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;border-top:1px solid var(--line);font-size:.98rem}
-.factors li b{font-weight:700}
-.factors li span{color:var(--muted);text-align:right}
-@media(max-width:820px){.about{grid-template-columns:1fr}}
+/* ---------- drilling log (dark) ---------- */
+.logsec{background:var(--ink);color:#E8ECEE;margin-top:clamp(3.8rem,8vw,6.5rem);padding:clamp(3.5rem,7vw,6rem) 0}
+.logsec .kicker{color:rgba(232,236,238,.55)}
+.logsec .sec-head h2{color:#F2F5F6}
+.logsec .sec-head h2 em{color:var(--yellow)}
+.logsec .sec-head .mono{color:rgba(232,236,238,.5)}
+.log{border:1px solid rgba(232,236,238,.25)}
+.log .lrow{display:grid;grid-template-columns:7.5rem 1fr 1.3fr;gap:1.2rem;padding:1.3rem 1.2rem;border-bottom:1px solid rgba(232,236,238,.16)}
+.log .lrow:last-child{border-bottom:0}
+.log .stage{font-family:var(--f-mono);font-size:.75rem;font-weight:600;color:var(--yellow);text-transform:uppercase;letter-spacing:.06em}
+.log .stage b{display:block;font-size:1.5rem;color:#F2F5F6;font-family:var(--f-cond);font-weight:400;letter-spacing:.02em;margin-top:.2rem}
+.log h3{font-family:var(--f-cond);font-weight:400;text-transform:uppercase;font-size:clamp(1.2rem,2.4vw,1.7rem);line-height:1;letter-spacing:.02em}
+.log p{color:rgba(232,236,238,.7);font-size:.96rem;line-height:1.5}
+.logsec .imgbox{margin-top:2rem;border:1px solid rgba(232,236,238,.25)}
+.logsec .imgbox img{width:100%;height:clamp(230px,42vh,400px);object-fit:cover}
+.figcap{font-family:var(--f-mono);font-size:.65rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(232,236,238,.55);margin-top:.6rem}
+@media(max-width:700px){.log .lrow{grid-template-columns:1fr}.log p{grid-column:1}}
 
-/* ---------- testimonials ---------- */
-.quotes{border-top:1px solid var(--line)}
-.quote{padding:2rem .2rem;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:start}
-.quote p{font-size:clamp(1.25rem,2.4vw,1.9rem);font-weight:650;line-height:1.3;letter-spacing:-.01em;max-width:38ch}
-.quote .who{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:right;white-space:nowrap}
-.quote .who b{display:block;color:var(--accent);font-size:.85rem}
-@media(max-width:700px){.quote{grid-template-columns:1fr}.quote .who{text-align:left}}
+/* ---------- why nics + job card ---------- */
+.why{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.why h3{font-size:clamp(1.45rem,2.8vw,2.1rem);font-weight:700;line-height:1.15;letter-spacing:-.01em;margin-bottom:1rem}
+.why p{color:var(--muted);margin-bottom:1rem;max-width:54ch}
+.why .imgbox img{width:100%;height:clamp(240px,38vh,360px);object-fit:cover;border:2px solid var(--ink)}
+.jobcard{position:relative;background:#fff;border:2px solid var(--ink);padding:1.5rem 1.5rem 1.3rem;margin-top:1.8rem;
+  box-shadow:8px 8px 0 rgba(17,22,26,.12)}
+.jobcard::before{content:"";position:absolute;top:0;left:0;right:0;height:8px;
+  background:repeating-linear-gradient(45deg,var(--yellow) 0 14px,var(--ink) 14px 28px)}
+.jobcard h4{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:.4rem 0 1rem}
+.jobcard li{list-style:none;display:flex;gap:.8rem;padding:.55rem 0;border-top:1px dashed var(--line);font-size:.99rem}
+.jobcard li .tick{color:var(--yellow-d);font-weight:700}
+.jobcard li b{font-weight:700}
+.jobcard li span{color:var(--muted)}
+.stamp{position:absolute;right:1.1rem;top:2rem;width:92px;height:92px;border:3px solid var(--water);border-radius:50%;
+  color:var(--water);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+  font-family:var(--f-mono);font-size:.52rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  transform:rotate(10deg);opacity:.85;line-height:1.5}
+.stamp b{font-size:.8rem;letter-spacing:.06em}
+@media(max-width:860px){.why{grid-template-columns:1fr}.stamp{width:76px;height:76px;top:1.6rem}}
+
+/* ---------- testimonials: log entries ---------- */
+.tlog{border-top:2px solid var(--ink)}
+.trow{display:grid;grid-template-columns:3.4rem 1fr auto;gap:1.3rem;padding:1.7rem .2rem;border-bottom:1px solid var(--line);align-items:start}
+.trow .mark{font-family:var(--f-cond);font-size:3rem;line-height:.6;color:var(--yellow-d)}
+.trow p{font-size:clamp(1.15rem,2.1vw,1.6rem);font-weight:600;line-height:1.35;letter-spacing:-.01em;max-width:42ch}
+.trow .who{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);text-align:right;line-height:1.7}
+.trow .who b{display:block;color:var(--ink);font-size:.8rem}
+@media(max-width:700px){.trow{grid-template-columns:1fr}.trow .mark{display:none}.trow .who{text-align:left}}
 
 /* ---------- photo band ---------- */
-.photoband{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:clamp(4rem,9vw,7.5rem)}
-.photoband figure{overflow:hidden;border-radius:4px;position:relative}
-.photoband img{width:100%;height:clamp(240px,40vh,380px);object-fit:cover}
-.photoband figcaption{position:absolute;left:1rem;bottom:1rem;background:var(--ground);color:var(--ink);
-  font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;padding:.55rem .9rem;border-radius:99px}
+.photoband{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:clamp(3.8rem,8vw,6.5rem)}
+.photoband figure img{width:100%;height:clamp(230px,38vh,360px);object-fit:cover;border:2px solid var(--ink)}
+.photoband figcaption{font-family:var(--f-mono);font-size:.65rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:.6rem}
 @media(max-width:700px){.photoband{grid-template-columns:1fr}}
 
-/* ---------- quote / contact (the aquifer) ---------- */
-.quote-sec{margin-top:clamp(4rem,9vw,7.5rem);background:linear-gradient(to bottom,var(--deep),var(--deep2));color:#EAF6FB;padding:clamp(3.5rem,8vw,6.5rem) 0}
-.quote-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(2rem,5vw,4.5rem)}
-.quote-sec h2{font-size:var(--t-xl);font-weight:850;font-stretch:118%;text-transform:uppercase;line-height:.92;letter-spacing:-.02em}
-.quote-sec .lead{color:rgba(234,246,251,.72);margin:1.2rem 0 1.8rem;max-width:42ch}
-.big-call{display:block;font-size:clamp(1.7rem,4.5vw,3rem);font-weight:850;font-stretch:115%;letter-spacing:-.01em;line-height:1}
-.big-call:hover{color:#38BDF8}
-.quote-sec .mono{color:rgba(234,246,251,.55)}
-.next-steps{margin-top:2rem;border:1px solid rgba(234,246,251,.25);border-radius:4px;padding:1.2rem 1.3rem}
-.next-steps h4{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(234,246,251,.55);margin-bottom:.8rem}
-.next-steps li{list-style:none;padding:.45rem 0;border-top:1px solid rgba(234,246,251,.15);font-size:.98rem;display:flex;gap:.9rem}
-.next-steps li b{color:#38BDF8;font-family:var(--f-mono);font-size:.8rem}
-form .frow{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
-form label{display:block;font-family:var(--f-mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(234,246,251,.55);margin:1.1rem 0 .35rem}
-form input,form select,form textarea{width:100%;background:transparent;border:0;border-bottom:1px solid rgba(234,246,251,.3);
-  color:#EAF6FB;font-family:var(--f-disp);font-size:1.05rem;padding:.55rem 0;border-radius:0;appearance:none}
-form select option{color:#062831}
-form input:focus,form select:focus,form textarea:focus{outline:none;border-bottom:2px solid #38BDF8}
-form textarea{resize:vertical;min-height:64px}
-form .btn{margin-top:1.8rem;width:100%;justify-content:center;font-size:1.05rem;cursor:pointer}
-@media(max-width:820px){.quote-grid{grid-template-columns:1fr}form .frow{grid-template-columns:1fr}}
+/* ---------- work order / quote ---------- */
+.order{margin-top:clamp(3.8rem,8vw,6.5rem);background:var(--ink2);color:#E8ECEE;padding:clamp(3.5rem,7vw,6rem) 0}
+.order .kicker{color:rgba(232,236,238,.55)}
+.order h2{font-family:var(--f-cond);text-transform:uppercase;font-size:clamp(2.1rem,5.2vw,3.9rem);line-height:.95;color:#F2F5F6}
+.order h2 em{font-style:normal;color:var(--yellow)}
+.order-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4rem);margin-top:2rem;align-items:start}
+.order .lead{color:rgba(232,236,238,.72);margin-bottom:1.6rem;max-width:40ch}
+.big-call{display:block;font-family:var(--f-cond);font-size:clamp(2rem,5vw,3.4rem);letter-spacing:.02em;color:#F2F5F6;line-height:1}
+.big-call:hover{color:var(--yellow)}
+.order .contact-lines{font-family:var(--f-mono);font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:rgba(232,236,238,.6);line-height:2.1;margin-top:1.4rem}
+.nextbox{border:1px solid rgba(232,236,238,.25);padding:1.2rem 1.3rem;margin-top:1.8rem}
+.nextbox h4{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(232,236,238,.5);margin-bottom:.7rem}
+.nextbox li{list-style:none;display:flex;gap:.9rem;padding:.5rem 0;border-top:1px solid rgba(232,236,238,.14);font-size:.96rem;color:rgba(232,236,238,.88)}
+.nextbox li b{font-family:var(--f-mono);font-size:.75rem;color:var(--yellow)}
+.workorder{background:var(--paper);color:var(--ink);padding:1.6rem 1.6rem 1.5rem;position:relative;box-shadow:10px 10px 0 rgba(0,0,0,.35)}
+.workorder::before{content:"";position:absolute;top:0;left:0;right:0;height:8px;background:repeating-linear-gradient(45deg,var(--yellow) 0 14px,var(--ink) 14px 28px)}
+.workorder .wo-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:.7rem;margin-bottom:.4rem}
+.workorder .wo-head b{font-family:var(--f-cond);font-weight:400;text-transform:uppercase;font-size:1.15rem;letter-spacing:.03em}
+.workorder .wo-head span{font-family:var(--f-mono);font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+form .frow{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+form label{display:block;font-family:var(--f-mono);font-size:.64rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:1rem 0 .3rem}
+form input,form select,form textarea{width:100%;background:#fff;border:1.5px solid rgba(17,22,26,.35);color:var(--ink);
+  font-family:var(--f-body);font-size:1rem;padding:.6rem .7rem;border-radius:0;appearance:none}
+form input:focus,form select:focus,form textarea:focus{outline:none;border-color:var(--water);box-shadow:0 0 0 3px rgba(14,124,196,.18)}
+form textarea{resize:vertical;min-height:60px}
+.workorder .btn{margin-top:1.5rem;width:100%;justify-content:center;cursor:pointer;font-family:var(--f-body)}
+@media(max-width:860px){.order-grid{grid-template-columns:1fr}form .frow{grid-template-columns:1fr}}
 
 /* ---------- footer ---------- */
-footer{background:var(--deep2);color:#EAF6FB;border-top:1px solid rgba(234,246,251,.15);padding:2.5rem 0 2rem;overflow:hidden}
-footer .giant{font-weight:900;font-stretch:124%;text-transform:uppercase;line-height:.8;letter-spacing:-.02em;
-  font-size:clamp(3rem,12.6vw,12rem);color:transparent;-webkit-text-stroke:1.5px rgba(234,246,251,.5);white-space:nowrap}
-footer .cols{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-top:2.2rem;color:rgba(234,246,251,.6);font-size:.9rem}
-footer a{color:#EAF6FB}
-footer a:hover{color:#38BDF8}
-.credit b{color:#38BDF8}
+footer{background:var(--ink);color:rgba(232,236,238,.65);padding:2.6rem 0 2rem;border-top:3px solid var(--yellow)}
+footer .cols{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:1.8rem}
+footer .fbrand{font-family:var(--f-cond);color:#F2F5F6;font-size:1.6rem;text-transform:uppercase;line-height:1}
+footer .fbrand span{display:block;font-family:var(--f-mono);font-size:.6rem;letter-spacing:.14em;color:rgba(232,236,238,.5);margin-top:.5rem;text-transform:uppercase}
+footer h5{font-family:var(--f-mono);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(232,236,238,.45);margin-bottom:.7rem}
+footer li{list-style:none;padding:.22rem 0;font-size:.93rem}
+footer a{color:#E8ECEE}
+footer a:hover{color:var(--yellow)}
+footer .base{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid rgba(232,236,238,.15);margin-top:2.2rem;padding-top:1.2rem;font-size:.85rem}
+.credit b{color:var(--yellow)}
+@media(max-width:760px){footer .cols{grid-template-columns:1fr}}
 
 /* ---------- floating whatsapp ---------- */
 .wa-float{position:fixed;right:1.1rem;bottom:1.1rem;z-index:90;background:#22c064;color:#0b2417;
-  font-weight:800;font-size:.95rem;padding:.85rem 1.3rem;border-radius:99px;box-shadow:0 10px 30px rgba(0,0,0,.25);
-  display:inline-flex;align-items:center;gap:.5rem;transition:transform .25s}
+  font-weight:700;font-size:.93rem;padding:.8rem 1.25rem;box-shadow:0 10px 28px rgba(0,0,0,.28);
+  display:inline-flex;align-items:center;gap:.5rem;transition:transform .25s;border:2px solid #0b2417}
 .wa-float:hover{transform:translateY(-3px)}
 
-.reveal{will-change:transform}
-@media(prefers-reduced-motion:reduce){
-  .mq-track{animation:none}
-  #depthChip .dot{animation:none}
-  html{scroll-behavior:auto}
-}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 
-<div id="loader" aria-hidden="true">
-  <div class="big">Nics<br>Boreholes</div>
-  <div class="pct" id="loadPct">0%</div>
+<div id="topProgress" aria-hidden="true"></div>
+
+<div id="ruler" aria-hidden="true">
+  <div class="track"></div>
+  <div class="fillbar" id="rulerFill"></div>
+  <div class="bit" id="rulerBit" style="top:0%"></div>
+  <div class="depthlab" id="rulerLab" style="top:0%">0 M</div>
 </div>
 
 <header>
   <div class="hd-in">
-    <a class="logo" href="#top">Nics<span>Hardware &amp; Borehole Services</span></a>
+    <a class="logo" href="#top">
+      <span class="box">N</span>
+      <span class="name">Nics<span>Hardware &amp; Borehole Services</span></span>
+    </a>
     <nav class="main">
-      <a href="#services"><span class="roll"><span class="r1">Services</span><span class="r2" aria-hidden="true">Services</span></span></a>
-      <a href="#process"><span class="roll"><span class="r1">The process</span><span class="r2" aria-hidden="true">The process</span></span></a>
-      <a href="#why"><span class="roll"><span class="r1">Why Nics</span><span class="r2" aria-hidden="true">Why Nics</span></span></a>
-      <a href="#clients"><span class="roll"><span class="r1">Clients</span><span class="r2" aria-hidden="true">Clients</span></span></a>
+      <a href="#services">Services</a>
+      <a href="#process">Drilling log</a>
+      <a href="#why">Why Nics</a>
+      <a href="#clients">Clients</a>
     </nav>
-    <a class="hd-cta" href="#quote"><span class="roll"><span class="r1">Get a quote</span><span class="r2" aria-hidden="true">Get a quote</span></span></a>
+    <a class="hd-call" href="tel:+254722489387">Call 0722 489 387</a>
   </div>
 </header>
-
-<div id="depthChip" aria-hidden="true"><span class="dot"></span> Depth <b id="depthVal">000 M</b></div>
 
 <main id="top">
 
   <!-- HERO -->
-  <div class="hero wrap">
-    <div class="hero-meta mono">
-      <span>Borehole Drilling · Water Systems · Hardware</span>
-      <span>Kabati · Wangige · Kikuyu · Kenol</span>
-    </div>
-    <h1 aria-label="We find water">
-      <span class="row"><span>We find</span></span>
-      <span class="row"><span class="outl-wrap"><span class="outl-base">Water</span><span class="outl-fill" aria-hidden="true">Water</span></span></span>
-    </h1>
-    <div class="hero-sub">
-      <p>Borehole drilling, hydrogeological surveys, pump installation and complete water systems — for <strong>homes, farms, businesses and institutions</strong>. Plus the hardware to build with it.</p>
-      <div class="cta-row">
-        <a class="btn" href="#quote"><span class="roll"><span class="r1">Get a free quote</span><span class="r2" aria-hidden="true">Get a free quote</span></span> <span class="arr">→</span></a>
-        <a class="btn ghost" href="tel:+254722489387"><span class="roll"><span class="r1">Call 0722 489 387</span><span class="r2" aria-hidden="true">Call 0722 489 387</span></span></a>
+  <div class="hero">
+    <div class="bg"><img id="heroImg" src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?q=80&w=1600&auto=format&fit=crop" alt="Clean water" fetchpriority="high"></div>
+    <div class="hero-in">
+      <div class="ref mono">
+        <span>Ref: Borehole drilling &amp; water systems</span>
+        <span>Kabati · Wangige · Kikuyu · Kenol</span>
+      </div>
+      <h1 aria-label="Borehole drilling and water systems">
+        <span class="row"><span>Borehole</span></span>
+        <span class="row"><span class="hl">Drilling</span></span>
+        <span class="row"><span>&amp; Water Systems</span></span>
+      </h1>
+      <div class="hero-sub">
+        <p>Hydrogeological surveys, borehole drilling, pump installation and complete water systems — for <strong>homes, farms, businesses and institutions</strong>. Plus the hardware to build with it.</p>
+        <div class="cta-row">
+          <a class="btn" href="#quote">Request a quotation <span class="arr">→</span></a>
+          <a class="btn ghost" href="#services">View services</a>
+        </div>
       </div>
     </div>
-    <div class="hero-img">
-      <img id="heroImg" src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?q=80&w=1600&auto=format&fit=crop" alt="Clean water — the end result of every borehole we drill" fetchpriority="high">
-      <div class="tag"><b>●</b>&nbsp; Now taking new projects</div>
+    <div class="hero-strip" aria-hidden="true">
+      <div class="in">
+        <span>Survey</span><span>Drilling</span><span>Casing</span><span>Pump installation</span><span>Solar systems</span><span>Tanks</span><span>Hardware</span>
+      </div>
     </div>
   </div>
 
-  <!-- STRATA -->
-  <div class="strata" aria-hidden="true"></div>
-  <div class="strata-label mono" aria-hidden="true"><span>Topsoil</span><span>Rock</span><span>Aquifer ↓</span></div>
-
-  <!-- MARQUEE -->
-  <div class="marquee" aria-hidden="true">
-    <div class="mq-track" id="mqTrack">
-      <span>Borehole Drilling <i>•</i> Hydrogeological Surveys <i>•</i> Pump Installation <i>•</i> Solar Water Systems <i>•</i> Irrigation <i>•</i> Water Tanks <i>•</i> Hardware Supplies <i>•</i> </span>
-    </div>
-  </div>
-
-  <!-- SERVICES -->
+  <!-- SERVICES: SPEC SHEET -->
   <section id="services" class="wrap">
+    <div class="kicker">Document — Services schedule</div>
     <div class="sec-head">
-      <h2>What we do</h2>
-      <span class="mono">Services — 08</span>
+      <h2>What we <em>do</em></h2>
+      <span class="mono">08 services — tap a row to request it</span>
     </div>
-    <div class="svc">
-      <a href="#quote">
-        <span class="no">/ 01</span>
-        <div><h3>Borehole Drilling</h3><p>Complete drilling for homes, farms, businesses and institutions — from the first survey to flowing water.</p></div>
-        <span class="arr">↗</span>
+    <div class="spec reveal">
+      <div class="shead"><span>Ref</span><span>Service</span><span>Scope of work</span><span></span></div>
+      <a class="srow" href="#quote">
+        <span class="no">S/01</span>
+        <h3>Borehole Drilling</h3>
+        <p>Complete drilling for homes, farms, businesses and institutions — from the first survey to flowing water.</p>
+        <span class="arr">→</span>
       </a>
-      <a href="#quote">
-        <span class="no">/ 02</span>
-        <div><h3>Hydrogeological Survey</h3><p>Groundwater assessment that finds the right drilling point and expected yield — before any drilling starts.</p></div>
-        <span class="arr">↗</span>
+      <a class="srow" href="#quote">
+        <span class="no">S/02</span>
+        <h3>Hydrogeological Survey</h3>
+        <p>Groundwater assessment that finds the right drilling point and expected yield — before any drilling starts.</p>
+        <span class="arr">→</span>
       </a>
-      <a href="#quote">
-        <span class="no">/ 03</span>
-        <div><h3>Pump Installation</h3><p>The right pump for your borehole, supplied, installed and tested by our own technicians.</p></div>
-        <span class="arr">↗</span>
+      <a class="srow" href="#quote">
+        <span class="no">S/03</span>
+        <h3>Pump Installation</h3>
+        <p>The right pump for your borehole, supplied, installed and tested by our own technicians.</p>
+        <span class="arr">→</span>
       </a>
-      <a href="#quote">
-        <span class="no">/ 04</span>
-        <div><h3>Solar Water Pump Systems</h3><p>Solar-powered pumping that frees your farm or home from fuel and electricity costs.</p></div>
-        <span class="arr">↗</span>
+      <a class="srow" href="#quote">
+        <span class="no">S/04</span>
+        <h3>Solar Water Pump Systems</h3>
+        <p>Solar-powered pumping that frees your farm or home from fuel and electricity costs.</p>
+        <span class="arr">→</span>
       </a>
-      <a href="#quote">
-        <span class="no">/ 05</span>
-        <div><h3>Borehole Maintenance</h3><p>Cleaning, repair and rehabilitation that brings a struggling borehole back to full flow.</p></div>
-        <span class="arr">↗</span>
+      <a class="srow" href="#quote">
+        <span class="no">S/05</span>
+        <h3>Borehole Maintenance</h3>
+        <p>Cleaning, repair and rehabilitation that brings a struggling borehole back to full flow.</p>
+        <span class="arr">→</span>
       </a>
-      <a href="#quote">
-        <span class="no">/ 06</span>
-        <div><h3>Irrigation Systems</h3><p>Irrigation installation that puts your borehole water to work across the whole farm.</p></div>
-        <span class="arr">↗</span>
+      <a class="srow" href="#quote">
+        <span class="no">S/06</span>
+        <h3>Irrigation Systems</h3>
+        <p>Irrigation installation that puts your borehole water to work across the whole farm.</p>
+        <span class="arr">→</span>
       </a>
-      <a href="#quote">
-        <span class="no">/ 07</span>
-        <div><h3>Water Tank Supply</h3><p>Storage tanks supplied and installed, sized to your daily water demand.</p></div>
-        <span class="arr">↗</span>
+      <a class="srow" href="#quote">
+        <span class="no">S/07</span>
+        <h3>Water Tank Supply</h3>
+        <p>Storage tanks supplied and installed, sized to your daily water demand.</p>
+        <span class="arr">→</span>
       </a>
-      <a href="#quote">
-        <span class="no">/ 08</span>
-        <div><h3>Hardware Supplies</h3><p>Quality hardware for construction and water infrastructure, from our stores in Kabati, Wangige, Kikuyu and Kenol.</p></div>
-        <span class="arr">↗</span>
+      <a class="srow" href="#quote">
+        <span class="no">S/08</span>
+        <h3>Hardware Supplies</h3>
+        <p>Quality hardware for construction and water infrastructure, from our stores in Kabati, Wangige, Kikuyu and Kenol.</p>
+        <span class="arr">→</span>
       </a>
     </div>
   </section>
 
-  <!-- PROCESS -->
-  <div class="field" id="process">
+  <!-- DRILLING LOG -->
+  <div class="logsec" id="process">
     <div class="wrap">
+      <div class="kicker">Field record</div>
       <div class="sec-head">
-        <h2>How a borehole happens</h2>
-        <span class="mono">The drilling process</span>
+        <h2>The drilling <em>log</em></h2>
+        <span class="mono">How a borehole happens — stage by stage</span>
       </div>
-      <div class="steps-wrap">
-        <div class="bignum-col" aria-hidden="true">
-          <div id="bigNum">01</div>
-          <span class="mono">Stage — scroll</span>
+      <div class="log reveal">
+        <div class="lrow">
+          <div class="stage">Stage<b>01</b></div>
+          <h3>Hydrogeological Survey</h3>
+          <p>Specialists assess the groundwater in your area and mark the best drilling location on your land.</p>
         </div>
-        <div class="steps">
-          <div class="step reveal">
-            <div class="num">01</div>
-            <h3>Hydrogeological Survey</h3>
-            <p>Specialists assess the groundwater in your area and mark the best drilling location on your land.</p>
-          </div>
-          <div class="step reveal">
-            <div class="num">02</div>
-            <h3>Borehole Drilling</h3>
-            <p>The rig goes down through soil and rock until it reaches the aquifer — the underground water.</p>
-          </div>
-          <div class="step reveal">
-            <div class="num">03</div>
-            <h3>Borehole Casing</h3>
-            <p>The hole is lined and secured so it stays open, clean and productive for years.</p>
-          </div>
-          <div class="step reveal">
-            <div class="num">04</div>
-            <h3>Pump Installation</h3>
-            <p>Your pump — electric or solar — is installed and tested, and the water reaches your tanks.</p>
-          </div>
+        <div class="lrow">
+          <div class="stage">Stage<b>02</b></div>
+          <h3>Borehole Drilling</h3>
+          <p>The rig goes down through soil and rock until it reaches the aquifer — the underground water.</p>
+        </div>
+        <div class="lrow">
+          <div class="stage">Stage<b>03</b></div>
+          <h3>Borehole Casing</h3>
+          <p>The hole is lined and secured so it stays open, clean and productive for years.</p>
+        </div>
+        <div class="lrow">
+          <div class="stage">Stage<b>04</b></div>
+          <h3>Pump Installation</h3>
+          <p>Your pump — electric or solar — is installed and tested, and the water reaches your tanks.</p>
         </div>
       </div>
       <div class="imgbox reveal">
         <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1600&auto=format&fit=crop" alt="Technical planning — every project starts with assessment and drawings" loading="lazy">
+        <p class="figcap">Fig. 01 — Every project starts with assessment &amp; planning</p>
       </div>
     </div>
   </div>
 
   <!-- WHY NICS -->
   <section id="why" class="wrap">
+    <div class="kicker">Why request a quote from us</div>
     <div class="sec-head">
-      <h2>Why Nics</h2>
-      <span class="mono">Request a quote from us</span>
+      <h2>Why <em>Nics</em></h2>
+      <span class="mono">The company</span>
     </div>
-    <div class="about">
-      <div class="imgbox reveal">
-        <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=1400&auto=format&fit=crop" alt="Irrigated farmland — what reliable borehole water makes possible" loading="lazy" style="object-position:center">
-        <p class="mono" style="margin-top:.8rem;color:var(--muted)">Farms, homes, businesses, institutions</p>
-      </div>
+    <div class="why">
       <div>
         <h3>Choosing the right drilling company decides the whole project.</h3>
         <p>Access to clean, reliable water is essential for homes, farms, industries and institutions. Nics combines technical expertise, modern equipment and skilled personnel to deliver complete water solutions — not just a hole in the ground, but the survey, the pump, the storage and the maintenance behind it.</p>
         <p>Every quote starts with your actual project. Our team assesses your water needs and recommends the most suitable solution for your property, farm or business.</p>
-        <div class="factors">
-          <h4>When you request a quote, you receive</h4>
+        <div class="jobcard reveal">
+          <div class="stamp" aria-hidden="true"><span>Nics</span><b>Quoted</b><span>Transparent</span></div>
+          <h4>Job card — when you request a quote, you receive</h4>
           <ul>
-            <li><b>Professional advice</b><span>from experienced technicians</span></li>
-            <li><b>Accurate estimates</b><span>based on your project needs</span></li>
-            <li><b>The best drilling location</b><span>recommended for your land</span></li>
-            <li><b>Pump &amp; storage guidance</b><span>the right system, sized for you</span></li>
-            <li><b>Transparent pricing</b><span>no hidden costs</span></li>
+            <li><span class="tick">✓</span><div><b>Professional advice</b> — <span>from experienced technicians</span></div></li>
+            <li><span class="tick">✓</span><div><b>Accurate estimates</b> — <span>based on your project needs</span></div></li>
+            <li><span class="tick">✓</span><div><b>The best drilling location</b> — <span>recommended for your land</span></div></li>
+            <li><span class="tick">✓</span><div><b>Pump &amp; storage guidance</b> — <span>the right system, sized for you</span></div></li>
+            <li><span class="tick">✓</span><div><b>Transparent pricing</b> — <span>no hidden costs</span></div></li>
           </ul>
         </div>
+      </div>
+      <div class="imgbox reveal">
+        <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=1400&auto=format&fit=crop" alt="Irrigated farmland — what reliable borehole water makes possible" loading="lazy">
+        <p class="figcap" style="color:var(--muted)">Fig. 02 — Farms, homes, businesses, institutions</p>
       </div>
     </div>
   </section>
 
   <!-- CLIENTS -->
   <section id="clients" class="wrap">
+    <div class="kicker">Client record</div>
     <div class="sec-head">
-      <h2>What our clients say</h2>
-      <span class="mono">Testimonials</span>
+      <h2>What clients <em>say</em></h2>
+      <span class="mono">Testimonials — from their current site</span>
     </div>
-    <div class="quotes">
-      <div class="quote reveal">
-        <p>"NICS helped us drill a borehole for our farm. Their team was professional and completed the project quickly. We now have a reliable water supply."</p>
+    <div class="tlog">
+      <div class="trow reveal">
+        <span class="mark">"</span>
+        <p>NICS helped us drill a borehole for our farm. Their team was professional and completed the project quickly. We now have a reliable water supply.</p>
         <span class="who"><b>Farm Owner</b>Borehole client</span>
       </div>
-      <div class="quote reveal">
-        <p>"Time-bound professionals. All the work was done to a high standard, with unity and a spirit of teamwork. Kudos!"</p>
+      <div class="trow reveal">
+        <span class="mark">"</span>
+        <p>Time-bound professionals. All the work was done to a high standard, with unity and a spirit of teamwork. Kudos!</p>
         <span class="who"><b>Alice</b>Thika</span>
       </div>
-      <div class="quote reveal">
-        <p>"Excellence, integrity and commitment is all I can describe the NICS team. The best among the rest — try them, with utmost service guarantee."</p>
+      <div class="trow reveal">
+        <span class="mark">"</span>
+        <p>Excellence, integrity and commitment is all I can describe the NICS team. The best among the rest — try them, with utmost service guarantee.</p>
         <span class="who"><b>Nathan Ake</b>Client</span>
       </div>
     </div>
@@ -437,60 +437,67 @@ footer a:hover{color:#38BDF8}
     <div class="photoband">
       <figure class="reveal">
         <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1400&auto=format&fit=crop" alt="Solar panels powering a water pumping system" loading="lazy">
-        <figcaption>Solar water systems</figcaption>
+        <figcaption>Fig. 03 — Solar water systems</figcaption>
       </figure>
       <figure class="reveal">
         <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=1400&auto=format&fit=crop" alt="Green irrigated crops under a wide sky" loading="lazy">
-        <figcaption>Irrigation &amp; farming</figcaption>
+        <figcaption>Fig. 04 — Irrigation &amp; farming</figcaption>
       </figure>
     </div>
   </div>
 
-  <!-- QUOTE -->
-  <div class="quote-sec" id="quote">
-    <div class="wrap quote-grid">
-      <div>
-        <span class="mono">Get a quote — you are at the aquifer</span>
-        <h2 style="margin-top:.8rem">Let's talk<br>about your water</h2>
-        <p class="lead">Fill in the form and it opens WhatsApp with your enquiry already written — or just call us:</p>
-        <a class="big-call" href="tel:+254722489387">0722 489 387</a>
-        <p class="mono" style="margin-top:1.4rem">info@nicshardwareandboreholeservices.co.ke</p>
-        <div class="next-steps">
-          <h4>What happens after you request a quote?</h4>
-          <ul>
-            <li><b>01</b> Project review — we assess groundwater conditions in your area</li>
-            <li><b>02</b> Consultation — we discuss your requirements and recommend a solution</li>
-            <li><b>03</b> Site assessment — a hydrogeological survey or site visit, if needed</li>
-            <li><b>04</b> Quotation — a detailed quote: drilling, equipment and installation</li>
-          </ul>
-        </div>
-      </div>
-      <form id="quoteForm">
-        <div class="frow">
-          <div><label for="f-name">Your name</label><input id="f-name" name="name" type="text" placeholder="e.g. Mary Wanjiru" required></div>
-          <div><label for="f-phone">Your phone</label><input id="f-phone" name="phone" type="tel" placeholder="e.g. 07XX XXX XXX" required></div>
-        </div>
-        <div class="frow">
-          <div>
-            <label for="f-service">Service required</label>
-            <select id="f-service" name="service">
-              <option>Borehole Drilling</option>
-              <option>Hydrogeological Survey</option>
-              <option>Pump Installation</option>
-              <option>Solar Water Pump System</option>
-              <option>Borehole Maintenance or Rehabilitation</option>
-              <option>Irrigation System Installation</option>
-              <option>Water Tank Supply and Installation</option>
-              <option>Hardware Supplies</option>
-              <option>Other — I'll explain</option>
-            </select>
+  <!-- WORK ORDER / QUOTE -->
+  <div class="order" id="quote">
+    <div class="wrap">
+      <div class="kicker">Quotation request</div>
+      <h2>Open a <em>work order</em></h2>
+      <div class="order-grid">
+        <div>
+          <p class="lead">Fill in the work order and it opens WhatsApp with your request already written — a specialist replies with a detailed quotation. Or just call:</p>
+          <a class="big-call" href="tel:+254722489387">0722 489 387</a>
+          <p class="contact-lines">
+            Alt line — 0180 389 396<br>
+            Email — info@nicshardwareandboreholeservices.co.ke<br>
+            Stores — Kabati · Wangige · Kikuyu · Kenol
+          </p>
+          <div class="nextbox">
+            <h4>What happens after you request a quote?</h4>
+            <ul>
+              <li><b>01</b> Project review — we assess groundwater conditions in your area</li>
+              <li><b>02</b> Consultation — we discuss your requirements and recommend a solution</li>
+              <li><b>03</b> Site assessment — a hydrogeological survey or site visit, if needed</li>
+              <li><b>04</b> Quotation — a detailed quote: drilling, equipment and installation</li>
+            </ul>
           </div>
-          <div><label for="f-where">Project location</label><input id="f-where" name="where" type="text" placeholder="e.g. Kenol, Murang'a" required></div>
         </div>
-        <label for="f-details">Anything else? (farm size, water use, current water source)</label>
-        <textarea id="f-details" name="details" placeholder="e.g. 2-acre farm, dairy cows and irrigation, currently buying water"></textarea>
-        <button class="btn" type="submit"><span class="roll"><span class="r1">Send via WhatsApp</span><span class="r2" aria-hidden="true">Send via WhatsApp</span></span> <span class="arr">→</span></button>
-      </form>
+        <form class="workorder" id="quoteForm">
+          <div class="wo-head"><b>Work order</b><span>Quotation request — Nics</span></div>
+          <div class="frow">
+            <div><label for="f-name">Your name</label><input id="f-name" type="text" placeholder="e.g. Mary Wanjiru" required></div>
+            <div><label for="f-phone">Your phone</label><input id="f-phone" type="tel" placeholder="e.g. 07XX XXX XXX" required></div>
+          </div>
+          <div class="frow">
+            <div>
+              <label for="f-service">Service required</label>
+              <select id="f-service">
+                <option>Borehole Drilling</option>
+                <option>Hydrogeological Survey</option>
+                <option>Pump Installation</option>
+                <option>Solar Water Pump System</option>
+                <option>Borehole Maintenance or Rehabilitation</option>
+                <option>Irrigation System Installation</option>
+                <option>Water Tank Supply and Installation</option>
+                <option>Hardware Supplies</option>
+                <option>Other — I'll explain</option>
+              </select>
+            </div>
+            <div><label for="f-where">Project location</label><input id="f-where" type="text" placeholder="e.g. Kenol, Murang'a" required></div>
+          </div>
+          <label for="f-details">Site details (farm size, water use, current water source)</label>
+          <textarea id="f-details" placeholder="e.g. 2-acre farm, dairy cows and irrigation, currently buying water"></textarea>
+          <button class="btn" type="submit">Submit via WhatsApp <span class="arr">→</span></button>
+        </form>
+      </div>
     </div>
   </div>
 
@@ -498,10 +505,30 @@ footer a:hover{color:#38BDF8}
 
 <footer>
   <div class="wrap">
-    <div class="giant" aria-hidden="true">Nics Water</div>
     <div class="cols">
-      <span>© 2026 Nics Hardware &amp; Borehole Services · Kabati · Wangige · Kikuyu · Kenol</span>
-      <span><a href="tel:+254722489387">0722 489 387</a> · <a href="tel:+254180389396">0180 389 396</a> · <a href="#quote">Get a quote</a></span>
+      <div>
+        <div class="fbrand">Nics<span>Hardware &amp; Borehole Services</span></div>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+254722489387">0722 489 387</a></li>
+          <li><a href="tel:+254180389396">0180 389 396</a></li>
+          <li>info@nicshardwareandboreholeservices.co.ke</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Locations</h5>
+        <ul>
+          <li>Kabati</li>
+          <li>Wangige</li>
+          <li>Kikuyu</li>
+          <li>Kenol</li>
+        </ul>
+      </div>
+    </div>
+    <div class="base">
+      <span>© 2026 Nics Hardware &amp; Borehole Services</span>
       <span class="credit">Website concept by <a href="https://wa.me/254799087345?text=Hi%20Felix%2C%20I%20saw%20the%20Nics%20Borehole%20website%20concept%20and%20I%27d%20like%20a%20website%20too" target="_blank" rel="noopener"><b>Felix Karanja</b></a></span>
     </div>
   </div>
@@ -515,10 +542,8 @@ footer a:hover{color:#38BDF8}
 <script>
 (function(){
   var WA = "254722489387";
-  var mq = document.getElementById('mqTrack');
-  mq.innerHTML += mq.innerHTML;
 
-  // quote form -> WhatsApp
+  // work order -> WhatsApp
   document.getElementById('quoteForm').addEventListener('submit', function(e){
     e.preventDefault();
     var v = function(id){ return document.getElementById(id).value.trim(); };
@@ -533,38 +558,33 @@ footer a:hover{color:#38BDF8}
     window.open("https://wa.me/" + WA + "?text=" + encodeURIComponent(lines.join("\n")), "_blank");
   });
 
-  // buttons: ink fill enters from the pointer's side
-  document.querySelectorAll('.btn').forEach(function(btn){
-    btn.addEventListener('mouseenter', function(e){
-      var r = btn.getBoundingClientRect();
-      btn.style.setProperty('--fill-origin', (e.clientX - r.left) < r.width / 2 ? 'left' : 'right');
-      btn.classList.add('fill-in');
-    });
-    btn.addEventListener('mouseleave', function(e){
-      var r = btn.getBoundingClientRect();
-      btn.style.setProperty('--fill-origin', (e.clientX - r.left) < r.width / 2 ? 'left' : 'right');
-      btn.classList.remove('fill-in');
-    });
+  // drill-string ruler: ticks every 50 m down the left edge
+  var ruler = document.getElementById('ruler');
+  [0, 50, 100, 150, 200].forEach(function(m){
+    var pct = m / 200 * 100;
+    var t = document.createElement('div'); t.className = 'tick'; t.style.top = pct + '%';
+    var l = document.createElement('div'); l.className = 'ticklab'; l.style.top = pct + '%'; l.textContent = m + 'M';
+    ruler.appendChild(t); ruler.appendChild(l);
   });
-
-  // depth chip: works with or without animation — the page is a borehole
-  var depthVal = document.getElementById('depthVal');
+  var fill = document.getElementById('rulerFill'),
+      bit = document.getElementById('rulerBit'),
+      lab = document.getElementById('rulerLab'),
+      bar = document.getElementById('topProgress');
   function updateDepth(){
     var max = document.documentElement.scrollHeight - window.innerHeight;
-    var p = max > 0 ? window.scrollY / max : 0;
-    var d = Math.max(0, Math.min(200, Math.round(p * 200)));
-    depthVal.textContent = String(d).padStart(3, '0') + ' M';
+    var p = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+    var pct = (p * 100).toFixed(2) + '%';
+    fill.style.height = pct;
+    bit.style.top = pct;
+    lab.style.top = pct;
+    lab.textContent = Math.round(p * 200) + ' M';
+    bar.style.width = pct;
   }
   window.addEventListener('scroll', updateDepth, { passive: true });
   updateDepth();
 
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var loader = document.getElementById('loader');
-
-  if (reduced || !window.gsap) {
-    if (loader) loader.style.display = "none";
-    return;
-  }
+  if (reduced || !window.gsap) return;
   gsap.registerPlugin(ScrollTrigger);
 
   if (window.Lenis) {
@@ -575,79 +595,33 @@ footer a:hover{color:#38BDF8}
     document.querySelectorAll('a[href^="#"]').forEach(function(a){
       a.addEventListener('click', function(e){
         var target = document.querySelector(a.getAttribute('href'));
-        if (target) { e.preventDefault(); lenis.scrollTo(target, { offset: -20 }); }
+        if (target) { e.preventDefault(); lenis.scrollTo(target, { offset: -30 }); }
       });
     });
   }
+  gsap.ticker.add(updateDepth);
 
-  // velocity marquee
-  mq.style.animation = "none";
-  var mqHalf = mq.scrollWidth / 2, mqX = 0, lastY = window.scrollY;
-  gsap.ticker.add(function(){
-    var y = window.scrollY;
-    var boost = Math.min(Math.abs(y - lastY) * 0.35, 7);
-    lastY = y;
-    mqX -= 1.4 + boost;
-    if (mqHalf > 0 && mqX <= -mqHalf) mqX += mqHalf;
-    mq.style.transform = "translateX(" + mqX + "px)";
-    updateDepth();
-  });
+  // hero: lines rise, photo drifts
+  gsap.set(".hero h1 .row > span", { yPercent: 112 });
+  gsap.set(".hero .ref, .hero-sub", { opacity: 0, y: 22 });
+  gsap.timeline({ delay: 0.1 })
+    .to(".hero h1 .row > span", { yPercent: 0, duration: 0.95, ease: "power4.out", stagger: 0.11 })
+    .to(".hero .ref", { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, "-=0.6")
+    .to(".hero-sub", { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, "-=0.35");
+  gsap.to("#heroImg", { yPercent: -10, ease: "none",
+    scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true } });
 
-  // loader: counter, handoff, hero reveal
-  var pct = document.getElementById('loadPct');
-  var state = { n: 0 };
-  var intro = gsap.timeline();
-  gsap.set(".hero h1 .row > span", { yPercent: 110 });
-  gsap.set(".hero-meta, .hero-sub, .hero-img", { opacity: 0, y: 26 });
-  intro.to(state, { n: 100, duration: 0.9, ease: "power2.inOut",
-      onUpdate: function(){ pct.textContent = Math.round(state.n) + "%"; } })
-    .to("#loadPct", { scale: 0.3, opacity: 0, y: -14, duration: 0.35, ease: "power2.in" })
-    .to("#loader .big", { y: -24, opacity: 0, duration: 0.35, ease: "power2.in" }, "<")
-    .to(loader, { yPercent: -100, duration: 0.8, ease: "power4.inOut" }, "-=0.05")
-    .set(loader, { display: "none" })
-    .to(".hero h1 .row > span", { yPercent: 0, duration: 1.05, ease: "power4.out", stagger: 0.12 }, "-=0.45")
-    .to(".hero-meta", { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, "-=0.7")
-    .to(".hero-sub", { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, "-=0.45")
-    .to(".hero-img", { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, "-=0.4");
-
-  // kinetic type: WATER fills with blue as you scroll away
-  var wrap = document.querySelector(".outl-wrap");
-  gsap.set(wrap, { "--fill": "0%" });
-  gsap.to(wrap, { "--fill": "100%", ease: "none",
-    scrollTrigger: { trigger: ".hero", start: "top top", end: "55% top", scrub: true } });
-
-  // hero image parallax
-  gsap.to("#heroImg", { yPercent: 10, ease: "none",
-    scrollTrigger: { trigger: ".hero-img", start: "top bottom", end: "bottom top", scrub: true } });
-
-  // pinned chapters: giant stage numeral swaps as stages pass
-  if (window.matchMedia("(min-width: 821px)").matches) {
-    var bigNum = document.getElementById('bigNum');
-    document.querySelectorAll(".steps .step").forEach(function(step, i){
-      ScrollTrigger.create({
-        trigger: step, start: "top 55%", end: "bottom 55%",
-        onToggle: function(self){
-          if (self.isActive) {
-            bigNum.textContent = "0" + (i + 1);
-            gsap.fromTo(bigNum, { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" });
-          }
-        }
-      });
-    });
-  }
-
-  document.querySelectorAll(".sec-head h2").forEach(function(h){
-    gsap.from(h, { y: 44, opacity: 0, duration: 0.9, ease: "power3.out",
-      scrollTrigger: { trigger: h, start: "top 88%" } });
-  });
-  gsap.from(".svc a", { y: 34, opacity: 0, duration: 0.7, ease: "power3.out", stagger: 0.07,
-    scrollTrigger: { trigger: ".svc", start: "top 85%" } });
-  document.querySelectorAll(".reveal").forEach(function(el){
-    gsap.from(el, { y: 40, opacity: 0, duration: 0.85, ease: "power3.out",
+  // reveals
+  gsap.utils.toArray(".sec-head, .kicker").forEach(function(el){
+    gsap.from(el, { y: 30, opacity: 0, duration: 0.75, ease: "power3.out",
       scrollTrigger: { trigger: el, start: "top 88%" } });
   });
-  gsap.from("footer .giant", { yPercent: 34, opacity: 0, duration: 1, ease: "power3.out",
-    scrollTrigger: { trigger: "footer", start: "top 92%" } });
+  document.querySelectorAll(".reveal").forEach(function(el){
+    gsap.from(el, { y: 36, opacity: 0, duration: 0.8, ease: "power3.out",
+      scrollTrigger: { trigger: el, start: "top 88%" } });
+  });
+  gsap.from(".stamp", { scale: 1.6, opacity: 0, rotate: 26, duration: 0.5, ease: "power4.out",
+    scrollTrigger: { trigger: ".jobcard", start: "top 75%" } });
 })();
 </script>
 </body>
